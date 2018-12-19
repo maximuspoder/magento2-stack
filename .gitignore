@@ -1,0 +1,43 @@
+#ignore thumbnails created by windows
+Thumbs.db
+
+#Ignore files build by Visual Studio
+*.obj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.dll
+*.lib
+*.sbr
+.unison*
+*(copy*
+*.tmp
+src/
+#Mac related files
+.DS_Store
+*DS_Store
+**/.DS_Store
+
+#maven and eclipse folders
+.settings
+.project
+.classpath
+target/
+.idea/
+*.iml
+/.data/
+!/.data/.gitkeep
+.scannerwork/
