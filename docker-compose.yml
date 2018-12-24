@@ -16,7 +16,7 @@ services:
     links:
       - db
     networks:
-      - redstage-network
+      - maximuspoder-network
 
   db:
     image: mariadb
@@ -30,21 +30,21 @@ services:
     volumes:
       - dbdatabase:/var/lib/mysql
     networks:
-      - redstage-network
+      - maximuspoder-network
 
   redis:
     image: redis
     ports:
      - 6379
     networks:
-      - redstage-network
+      - maximuspoder-network
 
   redis-session:
     image: redis
     ports:
      - 6379
     networks:
-      - redstage-network
+      - maximuspoder-network
 
   mailhog:
     image: mailhog/mailhog
@@ -52,10 +52,10 @@ services:
       - 1025:1025
       - 8025:8025
     networks:
-      - redstage-network
+      - maximuspoder-network
 
 networks:
-  redstage-network:
+  maximuspoder-network:
     driver: bridge
 
 volumes:
